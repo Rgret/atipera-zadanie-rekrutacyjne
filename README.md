@@ -39,7 +39,7 @@ Returns a JSON array of repository objects. Each repository object has the follo
         }
       }
     ],
-    "fork": true|false, // should always be false
+    "fork": true|false,
   }
 ]
 ```
@@ -70,3 +70,7 @@ The API can return the following error responses:
   "message": "Internal Server Error.  Details: {More specific error information if possible}" 
 }
 ```
+
+**Return type:**
+
+Endpoint returns `Uni<List<RepoDTO>>`
